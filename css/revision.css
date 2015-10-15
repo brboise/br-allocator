@@ -1,0 +1,910 @@
+.insights ul, .newsEvents ul{
+	width:auto;
+}
+
+.insights li, .newsEvents li{
+	width:auto;
+}
+
+.main .liqDescription p{
+	border-bottom:none;
+}
+
+.spotlight{
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+.spotlight a:hover h3{
+	text-decoration:inherit;
+}
+
+
+.header .level_1 a:hover,
+ .header .level_1 li.hovered a{
+}
+
+.header .level_1 .level_2{
+	margin-top:-1px;
+}
+
+
+
+.header .level_1 .level_2 li.contact_summary{
+	display:none;
+	background-color:#333;
+	padding:7px;
+	width:auto;
+	margin-bottom:10px;
+	font-size:11px;
+
+	color:#ddd;
+	border-radius:0px;	
+}
+
+
+li.contact_summary h2{
+	font-family: "Lato",helvetica,arial,sans-serif;
+	color:#b5b5b5;
+	font-size:11px;
+	padding-bottom:3px;
+	margin-bottom:3px;
+	text-transform:uppercase;
+	letter-spacing: 1px;
+
+}
+
+.nav_1_contact{
+	background: none !important;
+}
+
+
+table.liquidity-spectrum-table td ul.linkList li{
+	text-transform: none;
+}
+
+
+
+	.showHide_toggle{
+		display:block;
+		color:#fff !important;
+		font-family:Helvetica, Arial, sans-serif;
+		font-size: .9em;
+		height:48px;
+		text-transform: uppercase;
+		background-image:url("http://sandbox.hatterasfunds.com/img/global/tool_bar_button_blank02.jpg") !important;
+		background-repeat: no-repeat;
+		background-position-y: 0px;
+		text-align:center;
+		background-color: #fff;
+		padding-top:10px;
+		margin-top:2px;
+		font-weight: bold;
+	}
+	.showHide_toggle:hover{
+		text-decoration:none !important;
+		background-position-y: -73px;
+		padding-top:12px;
+		height:46px;
+	}
+	.showHide_toggle.expanded{
+		color:#ccc !important;
+		background-position-y: -73px;	
+		padding-top:12px;
+		height:46px;
+	}
+
+		.manager_container{
+			width:225px;
+			height:215px;
+			float:left;
+			margin:0 15px 15px 0;
+			background-color: #ebebeb;
+			padding:0px;
+			position:relative;
+		}
+		
+		.manager_container.flushRight{
+			margin-right:0;
+		}
+		
+		.manager_container h4{
+			min-height:30px;
+		}
+		
+		.manager_container img{
+			float:left;
+			margin-right:10px;
+		}
+		
+		.manager_info{
+			float:left;
+			width:200px;
+			margin:10px;
+			padding:0 0 0 3px;
+		}
+		
+		.company_modal_content, .personnel_modal_content{
+			display:none;
+		}
+		
+		.managers_modal_table td.noBorder{
+			border-bottom:none;
+		}
+		
+		.simplemodal-wrap {
+			overflow-y:auto !important;
+		}
+		
+		.simplemodal-wrap .personnel{
+			margin-bottom:0;
+			overflow:hidden;
+		}
+		
+		#simplemodal-container .bio{
+			width:auto;
+		}
+		
+		h3{
+			clear:both;
+			margin-top:
+		}
+		
+		.managers_wrap h2, .managers_wrap h3{
+			background: none;
+    		border-bottom: 1px solid #2f2f2f;
+    		color: #2f2f2f;
+    		font-family: georgia,serif;
+    		font-size: 14px;
+   	 		font-weight: bold;
+   	 		line-height: 13px;
+    		margin: 0 0 15px;
+    		padding: 10px 0 6px;
+    		text-transform: uppercase;
+		}
+
+		a.button {
+			background-color: #d9d9d9;
+			border-bottom: none;
+			text-decoration: none;
+			text-align:center;
+			color: #434343;
+			display: block;
+			font-family: Arial;
+			font-weight: bold;
+			padding: 6px 10px 6px 15px;
+			text-transform: uppercase;
+			width: 200px;
+			font-size: 11px;
+			position:absolute;
+			bottom:0;
+		}
+		.manager_container:hover a.button, a.button:hover {
+			text-decoration: none;
+			color: white;
+			background-color: #434343;
+			cursor: pointer;
+			cursor: hand;
+		}
+		
+		
+	#working{
+		position:fixed;
+		top:0; left:0; right:0; bottom:0;
+		background-color:rgba(0,0,0,0.6);
+		background-image: url(images/ajaxload.gif);
+		background-repeat:no-repeat;
+		background-position:50% 50%;
+		z-index:10000;
+	}
+	
+	
+.header li.nav_2_funds{
+	display:none;
+}
+
+
+.main .liqDescription p {
+	margin-bottom: 0;
+}
+
+.new_sidebar_header{
+	margin:-15px -10px 0 -10px; 
+	padding:12px 10px 0 31px; 
+	background-image:url(images/new.jpg); 
+	background-repeat:no-repeat;
+	height:31px;
+}
+
+.new_sidebar_header h2{
+	border-bottom:none;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+.new_sidebar_header h2 a{
+	color:#2e2e2e;
+}
+
+.sidebar h2 {
+	font-size: 11px !important;
+	color:#313131;
+}
+
+.newsEvents h3, .floatRight h2 {
+	font-size: 12px;
+}
+
+.want_to{
+	padding-top: 5px;
+}
+
+.spotlight a h3{
+	float:right;
+	width:120px;
+	border-bottom: none;
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 12px;
+}
+
+.spotlight img {
+	border-right:  none;
+	border-bottom:  none;
+
+}
+
+.sidebar a.link, .main a.link {
+	background: url("../img/global/link.gif") no-repeat -2px 3px;
+	background: url(images/pointer-gold-dark.png) 0 2px no-repeat; 
+	padding-left: 12px;
+}
+
+#dailyLiq a.link {
+	background: url(images/pointer-green.png) 0 2px no-repeat; 
+	padding-left: 12px;
+}
+
+#quarterlyLiq a.link {
+	background: url(images/pointer-blue.png) 0 2px no-repeat; 
+	padding-left: 12px;
+}
+
+
+#yearlyLiq a.link {
+	background: url(images/pointer-1yrgold.png) 0 2px no-repeat; 
+	padding-left: 12px;
+}
+
+i.icon-phone{
+	color:#be9e00;
+}
+
+
+.main table.literature a.link,.main .mockTable .docList a.link {
+
+	padding-left:18px;
+}
+
+.newsEvents li:last-child{
+	border:none;
+}
+
+.price_head th{
+	font-size: 10px;
+	font-weight: bold;
+	padding-top:5px;
+}
+
+.main div.tab td {
+/*	padding-right: 0px;*/
+}
+
+.main .callout{
+	margin-bottom: 10px;
+}
+
+.home ul.sliderGroup{
+	width:419px;
+	margin: 0 -1px 6px;
+
+
+}
+.home ul.sliderGroup li{
+	width:139px !important;
+}
+.home ul.sliderGroup li.yearlyLiq{
+	width:138px !important;
+}
+
+.home ul.sliderGroup li a {
+	background-image: url(images/gradients_02.gif) !important;
+	background-position: 0 bottom !important;
+	color:#8c8c8c !important;
+	padding-top: 2px;
+	padding-bottom:11px;
+}
+
+.home ul.sliderGroup li.dailyLiq a.on {
+	background-position: -169px bottom !important;
+}
+.home ul.sliderGroup li.quarterlyLiq a.on {
+	background-position: -487px bottom !important;
+}
+.home ul.sliderGroup li.yearlyLiq a.on {
+	background-position: -805px bottom !important;
+}
+
+
+	.sliderGroup li a{
+		font-size: 12px; /* per LC note */
+	}
+
+	.main .liqGroup li a{
+		text-transform: none;
+		background-position:-1px 0;
+		padding-left:18px;
+	}
+
+
+	.main .liqDescription p{
+		padding-bottom: 0;
+	}
+	
+	.liquidityWrap h3{
+		font-size:12px;
+		letter-spacing: .3px;
+	}
+
+.perf_class_switcher a.current{
+	background-color:#fff;
+}
+
+
+table th{
+	color:#232323
+}
+
+.main table a.link{
+	background-position: 0 1px !important;
+}
+
+
+.main .asp_performance_tab_wrapper table a.link{
+	background-position: -2px -1px !important;
+}
+
+.main table td.manager_container a.link{
+	background-position: -4px 1px;
+}
+
+
+.home .monthlyPerfHeader{
+	margin-top: 35px;
+}
+
+.sidebar{
+	border-top:10px solid #fff;
+}
+
+.main a,.sidebar a,.sidebar a.link, .main a.link, .spotlight a h3 {
+	color:#232323;
+}
+
+.main a:hover,.sidebar a:hover,.sidebar a.link:hover, .main a.link:hover, .spotlight a:hover h3 {
+	color:#b18f01;
+	text-decoration: none;
+}
+
+
+
+
+
+.insights li,
+.newsEvents li{
+	padding-left:40px;
+}
+
+.insights h3 a,
+.newsEvents h3 a{
+	margin-left:-40px;
+	padding-left:40px !important;
+	background-image:none !important;
+	background-position: 0 2px;
+	color:#232323;
+
+}
+
+.insights h3 a:hover,
+.newsEvents h3 a:hover{
+	color: #b18f01;
+	text-decoration: none;
+}
+
+
+.insights h3 a.icon_add,
+.newsEvents h3 a.icon_add
+{
+	background-image:url(images/black_icon_set/add.png) !important;
+	background-position: -2px 2px;
+}
+.insights h3 a.icon_cal,
+.newsEvents h3 a.icon_cal
+{
+	background-image:url(images/black_icon_set/cal2.png) !important;
+	background-position: -2px 2px;
+}
+.insights h3 a.icon_doc,
+.newsEvents h3 a.icon_doc
+{
+	/*
+background-image:url(images/black_icon_set/doc.png) !important;
+	background-position: -6px 2px;
+*/
+}
+
+.insights h3 a.icon_ema,
+.newsEvents h3 a.icon_ema
+{
+	background-image:url(images/black_icon_set/ema.png) !important;
+	background-position: 0 2px;
+}
+.insights h3 a.icon_gen,
+.newsEvents h3 a.icon_gen
+{
+	background-image:url(images/black_icon_set/gen.png) !important;
+	background-position: 6px 2px;
+}
+.insights h3 a.icon_med,
+.newsEvents h3 a.icon_med
+{
+	background-image:url(images/black_icon_set/med.png) !important;
+
+	background-position: 0 2px;
+}
+.insights h3 a.icon_tel,
+.newsEvents h3 a.icon_tel
+{
+	background-image:url(images/black_icon_set/tel.png) !important;
+	background-position: 0 2px;
+}
+
+
+/* fix for z-index on nav */
+li.hovered{
+	z-index:1000000 !important;
+}
+
+/* style tweaks for "letter from founder" */
+
+p.excerpt {
+	border: 0 none;
+    color: #222222;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.columns_2{
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-o-column-count: 2;
+	column-count: 2;
+}
+
+.authorDetails{
+	padding-top:10px;
+	height: 145px;
+	width: 175px;
+	padding-right: 25px;
+}
+
+.author{
+	margin: 15px 0;
+}
+
+.author h3,
+.author p{
+	border-bottom: none;
+}
+
+.author h3{
+	color:#232323;
+	padding-bottom:0;
+	margin-bottom:10px;
+}
+.author h3 span{
+	margin-top:5px;
+	display:block;
+	color:#444444;
+	font-size: 12px;
+}
+
+.author p{
+	margin-bottom:3px;
+	padding-bottom: 0;
+}
+
+.author p a{
+	padding-left: 12px;
+	background: url("images/pointer-gold-dark.png") no-repeat scroll 0 3px transparent;
+	display:block;
+	line-height:18px;
+
+}
+.author p a:hover{
+	border:none;
+	text-decoration: none;
+}
+
+.author p.quote{
+	margin: 35px 0 0 20px;
+}
+
+/* new gold pointer arrow for tables */
+
+.main table.literature a.link, .main .mockTable .docList a.link
+{
+	background-image: url(/css/images/arrows-pointers/table_arrow.png);
+	background-position: 3px 3px !important;
+}
+
+
+.sidebar a.link{
+	padding-left: 18px;
+	background-position: 3px 5px;
+	background-image: url(/css/images/arrows-pointers/table_arrow.png);
+}
+/* override black icons */
+
+.insights h3 a.icon_add,
+.newsEvents h3 a.icon_add
+{
+	background-image:url(images/black_icons/add.png) !important;
+	background-position: 0 3px !important;
+
+}
+.insights h3 a.icon_cal,
+.newsEvents h3 a.icon_cal
+{
+	background-image:url(images/black_icons/cal2.png) !important;
+	background-position: 0 3px !important;
+
+}
+.insights h3 a.icon_doc,
+.newsEvents h3 a.icon_doc
+{
+	/*
+background-image:url(images/black_icons/doc.png) !important;
+	background-position: 0 3px !important;
+*/
+
+}
+.newsEvents h3 ::before{content: "";
+position: absolute;
+top: 0;
+left: 0;
+background: url("images/black_icon_set/doc.png") no-repeat -6px 0;
+height: 27px;
+width: 27px;}
+
+.insights h3 a.icon_ema,
+.newsEvents h3 a.icon_ema
+{
+	background-image:url(images/black_icons/ema.png) !important;
+	background-position: 0 3px !important;
+
+}
+.insights h3 a.icon_gen,
+.newsEvents h3 a.icon_gen
+{
+	background-image:url(images/black_icons/gen.png) !important;
+	background-position: 0 3px !important;
+
+}
+.insights h3 a.icon_med,
+.newsEvents h3 a.icon_med
+{
+	background-image:url(images/black_icons/med.png) !important;
+	background-position: 0 3px !important;
+}
+.insights h3 a.icon_tel,
+.newsEvents h3 a.icon_tel
+{
+	background-image:url(images/black_icons/tel.png) !important;
+	background-position: 0 3px !important;
+
+}
+
+.insights h3 a, .newsEvents h3 a {
+  background-image: none !important;
+  background-position: 0 2px;
+  color: #232323;
+  margin-left: -27px;
+  padding-left: 27px !important;
+  position:relative;
+}
+
+.insights li, .newsEvents li {
+    padding-left: 27px;
+}
+
+/* increased vertical spacing */
+
+/*p + h2,*/
+ul + h2,
+ol + h2,
+div + h2,
+.main table + h2
+ {
+	margin-top: 55px;
+}
+
+.calendar_returns .main table + h2
+ {
+	margin-top: 25px;
+}
+
+
+.mockTable a + h3
+ {
+	margin-top: 25px;
+}
+
+.main table + h2.mockLiq,
+br + h2.mockLiq
+ {
+	margin-top: 60px;
+}
+
+br + .mockTable
+ {
+	margin-top: 30px;
+}
+
+br + h2.mockLiq
+ {
+	margin-top: 30px;
+}
+
+table.literature + .mockTable h3.mockH2,
+div + h3.mockH2{
+	margin-top: 25px;
+}
+
+.main .shared + h2{
+	margin-top: 45px;
+}
+
+h2.mockLiq + .mockTable ul.docList,
+h2.mockLiq + ul.docList
+{
+	
+}
+
+p + style + h2.mockLiq,
+table + style + h2.mockLiq {
+	margin-top:60px;
+}
+
+
+a[name=shareholder_docs] + h2.mockLiq {
+	margin-bottom:0px;
+}
+#hatteras_alternative_mutual_funds_applications + h3{
+	margin-top:20px;
+}
+
+.noMarginBottom{
+	margin-bottom:0 !important;
+}
+
+.main .callout + h2,
+.callout + div.personnel
+ {
+	/*margin-top: -40px;*/
+}
+
+.main .callout + h2{
+	margin-top:-10px; /* added 6/28/13 for about us page */
+}
+
+.sidebar .personnel {
+}
+
+.main .personnel {
+margin-bottom: 45px;
+}
+
+.main .author {
+margin-bottom: 15px;
+}
+
+div.personnel h3{
+	margin-bottom: 0;
+}
+
+
+.mapWrap table td {
+	padding: 10px 10px 15px !important;
+}
+.mapWrap table td.spacer{
+	padding: 0 !important;
+}
+.mapWrap table td.manager_container{
+	margin: 0 15px 15px 0 !important;
+}
+
+
+div.performance_tab_wrapper + h2 {
+	margin-top: 58px; /* override the special rule for g10k set in main.php */
+}
+
+ul.level_4 + h2{
+	margin-top: 0;
+}
+
+	/* sidebar */
+	
+.sidebar h2
+{
+	margin-top:35px;
+}
+.topMarginA
+{
+	margin-top:0px !important;
+}
+.topMarginB
+{
+	margin-top:40px !important;
+}
+.sidebar .new_sidebar_header h2,
+.sidebar .newsEvents h2
+{
+	margin-top: 0;
+}
+
+.sidebar .sliderWrap{
+	margin-bottom: -20px;
+}
+
+.sidebar table{
+	margin-top:35px;
+}
+
+.sidebar h2 + table{
+	margin-top: 0;
+}
+
+
+.sidebar .spotlight{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.sidebar .spotlight a h3{
+	margin-bottom: 0;
+}
+
+.sidebar .newsEvents{
+	margin-bottom: -10px;
+}
+
+.main .callout{
+	margin-bottom: 25px;
+}
+
+.jv_partners{
+	margin-bottom:40px;
+}
+/* kil border top on tabs */
+
+h2.mockLiq + .performance_tab_wrapper .tabs{
+	border-width: 0 0 1px;
+}
+
+h2.mockLiq {
+	margin-bottom:20px;
+}
+h2.beforePerf {
+	margin-bottom:11px;
+}
+
+/* full width pages */
+
+.main_fullwidth{
+	width: 100%;
+	float:none;
+	display:block;
+	background-color:#fff; /* to eclipse sidebar bg */
+}
+
+
+/* SML "global" table changes */
+
+table th, table td {
+	padding: 5px 5px 3px !important;
+}
+.main .mockTable .docList li {
+	padding: 7px 5px 5px;
+}
+table th {
+	font-weight: bold;
+	letter-spacing: -0.25px;
+	/* table th change might require some of the left
+	td datas to be in two lines instead of one line.
+	Not sure how simple or complicated this would be...
+	*/
+}
+
+/* spacing above footnotes */
+
+.main .tab_footnotes,
+.main .page_footnotes
+{
+	margin-top:60px !important;
+	clear:both;
+}
+
+.main .tab_footnotes + .footnotes.shared,
+.main .footnotes.shared + .tab_footnotes
+{
+	margin-top: 30px;
+}
+
+/* correcting investment process table for TD spacing */
+table#inv_process td, table#inv_process th{
+	padding: 0 !important;
+}
+
+/* additional styles for offsite modal */
+#simplemodal-container {
+	position: relative;
+}
+
+.offsite_wrap {
+	padding: 30px !important;
+}
+
+#simplemodal-container .offsite_wrap h1 {
+	border-style: none;
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+#simplemodal-container .offsite_wrap .buttons {
+	overflow: hidden;
+}
+
+.buttons a.closeModal,
+.buttons a.goOffsite {
+	color: #FFF;
+	display: inline-block;
+	font-family: "Lato",helvetica,arial,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 20px;
+	padding: 0 25px;
+	text-transform: uppercase;
+}
+
+.buttons .closeModal {
+	background: #A7A7A7;
+}
+.buttons .goOffsite {
+	background: #232323;
+}
+
+.offsite_wrap p {
+	border-top: 1px solid #232323;
+	bottom: 40px;
+	color: #232323;
+	font-family: "Lato",helvetica,arial,sans-serif;
+	font-size: 12px;
+	margin: 0 !important;
+	padding-top: 15px;
+	position: absolute;
+	width: 640px;
+}

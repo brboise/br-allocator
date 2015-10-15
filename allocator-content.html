@@ -1,0 +1,301 @@
+    <div id="wrapper">
+        <div class="header" style="position:relative;">
+            <div class="topWrap"></div>
+            <!-- .topWrap -->
+            <div class="clear"></div>
+        </div>
+        <!-- .header -->
+        <div class="content">
+            <div class="main">
+                <style>
+                 
+                </style>
+                <h2 class="mockLiq mockLiq-ia">Asset Allocator	</h2>
+                <div class="implementing_alts">
+                    <div id="tool_portfolios">
+                        <div class="tool_portfolio" id="default_portfolio">
+                            <form id="implementing_alts_form" action="" method="post">
+                                <input type="submit" style="position:absolute; top:-9999px;left:-9999px;" />
+                                <h3 class="sb">Stocks &amp; Bonds</h3>
+                                <table class="sb">
+                                    <tr>
+                                        <td class="borderLeft keyWrapper">
+                                            <div class="ia_key ia_key_stock">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/clr_stocks.jpg" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <i>Stocks</i>
+                                        </td>
+                                        <td class="borderRight">
+                                            <div class="inc_wrap">
+                                                <input type="text" name="stock" value="50" class="text" /> %
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="bonds">
+                                        <td class="borderLeft keyWrapper">
+                                            <div class="ia_key ia_key_bond">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/clr_bonds.jpg" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <i>Bonds</i>
+                                        </td>
+                                        <td class="borderRight">
+                                            <div class="inc_wrap">
+                                                <input type="text" name="bonds" value="30" class="text" /> %
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="bracket">
+                                    <div class="readout sbReadout">80%</div>
+                                </div>
+                                <div class="clear"></div>
+                                <h3 class="alts">Real Estate</h3>
+                                <table id="implementing_alts_input" class="alts">
+                                    <tr class="">
+                                        <td class="borderLeft keyWrapper">
+                                            <div class="ia_key ia_key_hedged">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/clr_hedge.jpg" />
+                                            </div>
+                                        </td>
+                                        <td class="indented">
+                                            <i>Public Real Estate</i>
+                                        </td>
+                                        <td class="borderRight">
+                                            <div class="inc_wrap">
+                                                <input type="text" name="hedged_strategies" value="10" class="text" /> %
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="borderLeft keyWrapper">
+                                            <div class="ia_key ia_key_private">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/clr_private.jpg" />
+                                            </div>
+                                        </td>
+                                        <td class="indented">
+                                            <i>Private Real Estate</i>
+                                        </td>
+                                        <td class="borderRight">
+                                            <div class="inc_wrap">
+                                                <input type="text" name="private_investments" value="10" class="text" /> %
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <div class="bracket">
+                                    <div class="readout altsReadout">20%</div>
+                                </div>
+                            </form>
+                            <div style="display:none">
+                                <h2 class="mockLiq">60% STOCK / 40% BONDS</h2>
+                                <div class="pie" id="default_holder"></div>
+                                <div class="mockForm">
+                                    <table id="">
+                                        <tr>
+                                            <td class="spacer"></td>
+                                            <td></td>
+                                            <td class="disabled">
+                                                <b>Alternatives</b>
+                                            </td>
+                                            <td>
+                                                <span class="ia_readout disabled">0</span>
+                                            </td>
+                                            <td class="spacer"></td>
+                                        </tr>
+                                        <tr class="no_border_bottom">
+                                            <td class="spacer"></td>
+                                            <td></td>
+                                            <td class="indented disabled">
+                                                <i>Hedge Fund Strategies</i>
+                                            </td>
+                                            <td width="33">
+                                                <span class="ia_readout disabled">0</span>
+                                            </td>
+                                            <td class="spacer"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="spacer"></td>
+                                            <td></td>
+                                            <td class="indented disabled">
+                                                <i>Private Investments</i>
+                                            </td>
+                                            <td>
+                                                <span class="ia_readout disabled">0</span>
+                                            </td>
+                                            <td class="spacer"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="spacer"></td>
+                                            <td>
+                                                <div class="ia_key ia_key_stock"></div>
+                                            </td>
+                                            <td>
+                                                <b>Stock</b>
+                                            </td>
+                                            <td>
+                                                <span class="ia_readout">60</span>
+                                            </td>
+                                            <td class="spacer"></td>
+                                        </tr>
+                                        <tr class="bonds">
+                                            <td class="spacer"></td>
+                                            <td>
+                                                <div class="ia_key ia_key_bond"></div>
+                                            </td>
+                                            <td>
+                                                <b>Bonds</b>
+                                            </td>
+                                            <td>
+                                                <span class="ia_readout">40</span>
+                                            </td>
+                                            <td class="spacer"></td>
+                                        </tr>
+                                        <!--tr class="total"><td class="spacer"></td><td>&nbsp;</td><td><b>Total</b></td><td><span class="ia_readout">100</span></td><td class="spacer"></td></tr-->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tool_portfolio" id="model_portfolio">
+                            <div class="pie" id="holder"></div>
+                            <p class="instructions">
+                                <span class="alert_100">Adjust allocation values to equal 
+                                                                                        <b>100%</b>
+                                                                                        <br />
+                                                                                    </span> Your current total is
+                                <b class="all_total_wrapper">
+                                                                                        <span id="all_total">100</span>%
+                                                                                    </b>.
+
+
+                            </p>
+                            <div class="compare">Calculate Your Results</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div id="tool_results_wrapper">
+                        <div id="tool_results_key">
+                            <div class="ia_key ia_key_default">
+                                <img src="http://bluerockre.com/css/images/ia_colors/grey.jpg" />
+                            </div>
+                            <span class="stocks_bonds">Traditional Portfolio</span> &nbsp; &nbsp;
+
+
+                            <div class="ia_key ia_key_model">
+                                <img src="http://bluerockre.com/css/images/ia_colors/magenta.jpg" />
+                            </div>
+                            <span class="alts">My Portfolio</span>
+                        </div>
+                        <div id="tool_results">
+                            <div class="tool_results_left">
+                                <h2>Portfolio Statistics</h2>
+                                <table class="stats stripe">
+                                    <thead>
+                                        <tr>
+                                            <th>&nbsp;</th>
+                                            <th class="rightAlign sbCol">60% Stocks /
+                                                <br />40% Bonds
+                                            </th>
+                                            <th class="rightAlign altCol">My
+                                                <br />Portfolio
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr data-stat="cumulative_return"><td class="leftAlign key">Cumulative Return</td><td class="value_init leftAlign sbCol"></td><td class="value leftAlign altCol"></td></tr> -->
+                                        <tr data-stat="annualized_return">
+                                            <td class="leftAlign key">Annualized Return</td>
+                                            <td class="value_init leftAlign sbCol"></td>
+                                            <td class="value leftAlign altCol"></td>
+                                        </tr>
+                                        <tr data-stat="stddev">
+                                            <td class="leftAlign key">Annualized Std. Dev.</td>
+                                            <td class="value_init leftAlign sbCol"></td>
+                                            <td class="value leftAlign altCol"></td>
+                                        </tr>
+                                        <tr data-stat="correlation">
+                                            <td class="leftAlign key">Correlation (vs. S&amp;P 500)</td>
+                                            <td class="value_init leftAlign sbCol"></td>
+                                            <td class="value leftAlign altCol"></td>
+                                        </tr>
+                                        <!-- <tr data-stat="best_12_months"><td class="leftAlign key">Best 12 Months</td><td class="value_init leftAlign sbCol"></td><td class="value leftAlign altCol"></td></tr><tr data-stat="worst_12_months"><td class="leftAlign key">Worst 12 Months</td><td class="value_init leftAlign sbCol"></td><td class="value leftAlign altCol"></td></tr> -->
+                                        <tr data-stat="g10k">
+                                            <td class="leftAlign key">Growth of $10,000</td>
+                                            <td class="value_init leftAlign sbCol"></td>
+                                            <td class="value leftAlign altCol"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="ia_bars" class="tool_results_right">
+                                <div class="ia_bar_wrapper">
+                                    <h2>Annualized Return</h2>
+                                    <div data-min="0" data-max="20" id="ia_bar_return" class="ia_bar">
+                                        <div class="ia_bar_max">20%</div>
+                                        <div class="ia_bar_min">0%</div>
+                                        <div class="color-wrapper">
+                                            <div class="color active initial">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/grey.jpg" />
+                                                <div class="label"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-wrapper">
+                                            <div class="color active">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/magenta.jpg" />
+                                                <div class="label"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <br />
+                                <div class="ia_bar_wrapper">
+                                    <h2>Standard Deviation</h2>
+                                    <div data-min="0" data-max="20" id="ia_bar_stddev" class="ia_bar">
+                                        <div class="ia_bar_max">20%</div>
+                                        <div class="ia_bar_min">0%</div>
+                                        <div class="color-wrapper">
+                                            <div class="color active initial">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/grey.jpg" />
+                                                <div class="label"></div>
+                                            </div>
+                                        </div>
+                                        <div class="color-wrapper">
+                                            <div class="color active">
+                                                <img src="http://bluerockre.com/css/images/ia_colors/magenta.jpg" />
+                                                <div class="label"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                            <h2 class="ia_g10k_header">Growth of $10,000 (January 1, 2004 - December 31, 2013)</h2>
+                            <div id="implementing_alts_g10k" style="height:250px; width:675px; position:relative;"></div>
+                        </div>
+                    </div>
+                    <div style="display:none" class="implementing_alts_data">12/31/2004TAB10.88TAB4.49TAB31.58TAB14.48BR12/31/2005TAB4.91TAB2.87TAB12.16TAB20.06BR12/31/2006TAB15.79TAB1.96TAB35.06TAB16.59BR12/31/2007TAB5.49TAB10.21TAB-15.69TAB15.84BR12/31/2008TAB-37.00TAB20.10TAB-37.73TAB-6.46BR12/31/2009TAB26.46TAB-11.12TAB27.99TAB-16.86BR12/31/2010TAB15.06TAB8.46TAB27.95TAB13.11BR12/31/2011TAB2.11TAB15.07TAB8.28TAB14.26BR12/31/2012TAB16.00TAB3.80TAB19.70TAB10.54BR12/31/2013TAB32.39TAB-9.10TAB2.86TAB10.99</div>
+                </div>
+                <br />
+                <p></p>
+                <div class="clear"></div>
+                <div style="clear:both;"></div>
+            </div>
+            <!-- .main -->
+            <div class="clear"></div>
+        </div>
+        <!-- .content -->
+    </div>
+    <!-- #wrapper -->

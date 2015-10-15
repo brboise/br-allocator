@@ -1,0 +1,289 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 (function() \{ // open block\
+\
+\
+var undefined;\
+\
+function get_colors()\{\
+\
+	var tool_colors = ['#efc223',\
+	'#Df793d',\
+	'#3ebeba',	\
+	'#aaad39'\
+	];\
+\
+	\
+	return tool_colors;\
+	\
+\}\
+\
+function get_ia_stats(form)\{\
+\
+\
+\
+		var blend = [],\
+			g10k_data = [],		\
+			x, y, init, v;\
+\
+		for(x in form)\{\
+			blend[x] = [form[x] * 100];\
+		\}\
+		\
+		var blend_values = [];\
+		\
+		\
+\
+		var i = 0, \
+			lastsum = 10000;\
+		\
+		for(y in keyed_data)\{\
+			\
+			var row_total = 0;	\
+			\
+			for(x in form)\{\
+				\
+				init = blend[x][blend[x].length-1];\
+				v = init * ((10000 + keyed_data[y][x]) / 10000) ;\
+				blend[x].push( init * ((10000 + keyed_data[y][x]) / 10000) );\
+				row_total += init * ((10000 + keyed_data[y][x]) / 10000);\
+\
+			\}\
+\
+			g10k_data[y] = row_total;\
+			i++;\
+			\
+			if(i && (i % 4 === 0))\{\
+				for(x in form)\{\
+					var w = (form[x]);					\
+					blend[x].push( w * row_total /100 );\
+				\}\
+			\}\
+			var perf    = (row_total - lastsum) * 100 / lastsum;\
+\
+			blend_values.push(perf);\
+			lastsum = row_total;			\
+			\
+		\}\
+		\
+\
+\
+		\
+\
+		var blended_portfolio = blend;\
+		var blended_portfolio_vals = blend_values;\
+				\
+		var stddev_val = parseFloat(stddev(blended_portfolio_vals));\
+\
+		var correlation = correl(blended_portfolio_vals, bench_data);\
+		\
+		var stats = new Object();\
+		\
+		stats.stddev = number_format(stddev_val,2) + '%';\
+		stats.correlation = number_format(correlation, 2);\
+		\
+		\
+//		set_ia_bar_value($('#ia_bar_stddev'), stddev_val);\
+		\
+		var rolling_12_months = [];\
+		\
+		var first, second, third, fourth, rolling;\
+		\
+		for(i in blended_portfolio_vals)\{\
+			if(i<3)\{\
+				continue;\}\
+			first = blended_portfolio_vals[i-2];\
+			second = blended_portfolio_vals[i-1];\
+			third = blended_portfolio_vals[i];\
+			fourth = blended_portfolio_vals[i-3];\
+			\
+			rolling = ((first + 100)/100) * (( second + 100)/100) * ((third + 100)/100) * ((fourth+100)/100) - 1;\
+			rolling_12_months.push(rolling);\
+			\
+		\}\
+		\
+		\
+		\
+		\
+		stats.worst_12_months = number_format(Math.min.apply(Math, rolling_12_months) * 100, 2) + '%';\
+		stats.best_12_months  = number_format(Math.max.apply(Math, rolling_12_months) * 100, 2 ) + '%';\
+		\
+		\
+		var g10k_rolling = 1000000;\
+		var cumulative_return = 100;\
+		var last_change = 1;\
+		var changes = [];\
+		var g10k = [];\
+		var change;\
+		for(x in blended_portfolio_vals)\{\
+			change = ((100 + blended_portfolio_vals[x]) /100);\
+			g10k_rolling = g10k_rolling * ((100 + blended_portfolio_vals[x]) /100);\
+			cumulative_return = cumulative_return * ((100 + blended_portfolio_vals[x]) /100);\
+			g10k.push(Math.round(g10k_rolling)/100);\
+		\}\
+		\
+\
+		\
+		var count = 0;\
+		for(x in keyed_data)\{\
+			x = new Date(x);\
+\
+			g10k[count] = [Date.UTC(x.getFullYear(), x.getMonth(), x.getDate()), g10k[count]];\
+			count++;\
+		\}\
+		\
+		\
+		\
+		stats.g10k = '$' + number_format(g10k_rolling/100, 0);\
+		\
+		cumulative_return -= 100;\
+		stats.cumulative_return = number_format(cumulative_return, 2) + '%';\
+		\
+		var firstDate = new Date('1/1/04');\
+		var lastDate = new Date(window.lastDate);\
+		\
+		var oneDay = 24*60*60*1000; \
+		var diffDays = Math.round(Math.abs((firstDate.getTime() - lastDate.getTime())/(oneDay)));\
+		var diffYears = diffDays / 365; \
+		\
+\
+		\
+		\
+\
+		\
+		var annualized_return = parseFloat(Math.pow((cumulative_return+100) / 100 ,  (1/  (diffDays/365) ) ) * 100  - 100);\
+\
+		\
+	\
+		stats.annualized_return = number_format(annualized_return,2) + '%';\
+		\
+		stats.g10k_data = g10k; \
+		\
+		return stats;\
+\
+\}\
+\
+\
+function stddev(data)\{\
+	var deviation = [];\
+	var sum = 0;\
+	var devnsum = 0;\
+	var stddevn = 0;\
+	var len = data.length;\
+	for (var i=0; i<len; i++) \{\
+	sum = sum + (data[i] * 1);  // ensure number\
+	\}\
+	var mean = (sum/len).toFixed(6);  // 6 decimal places\
+	for (i=0; i<len; i++) \{\
+	deviation[i] = data[i] - mean;\
+	deviation[i] = deviation[i] * deviation[i];\
+	devnsum = devnsum + deviation[i];\
+	\}\
+	stddevn = Math.sqrt(devnsum/(len-1)).toFixed(6);  // 6 decimal places\
+	\
+	return stddevn;\
+\}\
+\
+\
+\
+function correl(arr1, arr2)\{\
+\
+	var x;\
+	var pointCount = arr1.length;\
+	\
+	var arr1_arr2_sum = 0;\
+	var arr1_arr1_sum = 0;\
+	var arr2_arr2_sum = 0;\
+\
+	var arr1_sum = 0;\
+	var arr2_sum = 0;\
+	\
+	for(x in arr1)\{\
+	\
+		\
+	\
+		arr1_arr2_sum += (arr1[x] ) * (arr2[x] );\
+		arr1_arr1_sum += (arr1[x] ) * (arr1[x] );\
+		arr2_arr2_sum += (arr2[x] ) * (arr2[x] );\
+\
+		arr1_sum      += arr1[x];\
+		arr2_sum      += arr2[x];\
+	\}\
+\
+		\
+	\
+	var correl_val = (pointCount * arr1_arr2_sum - arr1_sum * arr2_sum) / Math.sqrt((pointCount * arr1_arr1_sum - arr1_sum * arr1_sum) * (pointCount * arr2_arr2_sum - arr2_sum * arr2_sum));\
+\
+	return correl_val;\
+\
+\}\
+\
+\
+\
+function isInt(x) \{\
+   var y=parseInt(x);\
+   if (isNaN(y))\{ return false; \}\
+   return x==y && x.toString()==y.toString();\
+ \} \
+\
+function ia_bar_width_to_value(bar, width)\{\
+\
+	var min = parseFloat(bar.closest('.ia_bar').attr('data-min'));\
+	var max = parseFloat(bar.closest('.ia_bar').attr('data-max'));\
+	var barwidth = bar.closest('.ia_bar').width();\
+	var value = (max-min) * width / barwidth;\
+	value = Math.round(value*100)/100;\
+	return value;\
+\}\
+\
+function ia_bar_value_to_width(bar, val)\{\
+\
+	var min = parseFloat(bar.closest('.ia_bar').attr('data-min'));\
+	var max = parseFloat(bar.closest('.ia_bar').attr('data-max'));\
+//	var width = parseFloat(bar.closest('.ia_bar').width());\
+	\
+	val = parseFloat(val);\
+	\
+	var newwidth = (val / (max - min)) * 100;//width;\
+	return newwidth;\
+\
+\}\
+function set_ia_bar_value(bar, value, bench)\{\
+\
+	if(bench === undefined)\{\
+		bench = false;\}\
+\
+	var target;\
+	if(bench)\{\
+		target = ".color.initial";\
+	\} else \{\
+		target = ".color:not(.initial)";\}\
+\
+\
+	var newwidth = ia_bar_value_to_width(bar.find('.color'), value);\
+	\
+\
+	\
+	bar.find(target)\
+		.animate(\
+			\{width: newwidth+'%'\},\
+			\{\
+				step: function(now, fx)\{\
+					$(fx.elem).find('.label').html(ia_bar_width_to_value($(fx.elem), now) + '%');\
+				\},\
+				duration: 1200,\
+				complete: function()\{\
+					bar.find(target).find('.label').html(number_format(value,2) + '%');				\
+				\}\
+			\}\
+		).css('overflow','visible');\
+\
+	\
+\
+\}\
+}

@@ -1,0 +1,75 @@
+body {
+	background: #FFF;
+}
+
+.content {
+	background-image: none !important;
+
+	margin: 0 auto;
+
+}
+
+.main {
+	float: none;
+	width: 705px;
+	margin: 0;
+	padding:0;
+}
+
+ul.tools,
+.centerNav,
+.sidebar,
+p.tagline,
+ul.sitemap,
+ul.extras,
+a.print {
+	display: none;
+}
+
+.topWrap {
+	background: none !important;
+} 
+
+.header h1 a {
+	background: url(../img/global/hatteras_funds_print.gif) no-repeat 0 0;
+}
+
+.footer {
+	background-color: #FFF;
+	border-top: 4px solid #A7A7A7;
+}
+
+
+/*managers page */
+
+.manager_container{
+	width:100% !important;
+	height:auto !important;
+}
+
+
+.personnel_modal_content{
+	display: block !important;
+	border-bottom: 1px solid #333;
+}
+
+
+.manager_info img{
+	display:none;
+}
+
+.personnel_modal_content img{
+	margin-left:0;
+}
+
+.personnel_modal_content h2{
+	color:#000;
+	
+}
+.bio{
+	width:auto;
+}
+.manager_container a.button,.manager_container .manager_info{
+	display:none;
+}
+

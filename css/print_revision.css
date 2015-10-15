@@ -1,0 +1,309 @@
+#wrapper{
+	padding: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.daily .sidebar,
+.quarterly .sidebar
+{
+	display:block;
+	width:auto;
+	float: none;
+	margin-top:20px;
+	padding: 20px 20px 10px;
+	border:1px solid #ccc;
+	overflow:hidden;
+}
+
+.daily .sidebar table,
+.quarterly .sidebar table
+
+{
+	width:100%;
+}
+
+.sliderWrap{
+	display:none;
+}
+
+.header{
+	margin: 0 0;
+	padding: 0 0;
+	border-bottom:none !important;	
+}
+
+.header h1{
+	border-bottom:none !important;
+	font-size:14pt !important;
+	font-style: italic;
+	color:#000;
+	font-family:Georgia;
+}
+
+
+.header h1, .header h1 a{
+	background-image:none;
+	color:#000;
+	width:auto;
+	height:auto;
+	margin:0 !important;
+	text-indent:0;
+	border-bottom:none;
+	display:block;
+}
+
+h2.mockLiq{
+	padding-left:0;
+	border-bottom:1px solid #000;
+}
+
+
+.content,
+.main{
+	width:auto;
+}
+
+.main{
+	padding-left:90px;
+	float:none;
+}
+
+.main .callout,
+.main .introCallout p
+{
+	margin: 0 0 10px;
+	font-style:italic;
+	font-size:18pt;
+	line-height:22pt;
+	border: none !important;
+	padding-left:0;
+	padding-right: 0;
+	font-family:Georgia;
+}
+
+
+
+.main h1{
+	left: 0; right: 0;
+	font-size:30pt;
+	padding-bottom: 0px;
+	border-bottom:none !important;
+}
+
+.topWrap{
+	border:none !important;
+	padding: 0 !important;
+}
+
+.main ul.level_4{
+	border: none;
+	margin-top:20px;
+}
+
+.main ul.level_4 li{
+	margin-left: 0;
+}
+
+.main ul.level_4 li a{
+	font-weight: normal;
+}
+.main ul.level_4 li.on a{
+	font-weight:bold;
+	border-bottom:3px solid;
+	color: #000;
+	padding: 0 1em;
+}
+
+.main .footnotes{
+	color: #333;
+	overflow:hidden;
+}
+
+.fund_literature, .print_hide{
+	display:none;
+}
+
+.print_col_13{
+	clear:left;
+}
+
+.print_col_13,
+.print_col_23,
+.print_col_33{
+	margin-top:20px;
+	width:30%;
+	margin-right:5%;
+	float:left;
+}
+.print_col_33{
+	margin-right:0;
+}
+
+.print_col_12,
+.print_col_22
+{
+	width:48%;
+	margin-right:4%;
+	float:left;
+}
+.print_col_22{
+	margin-right:0;
+}
+
+.performance_tab_wrapper .tabs{
+	display:none;
+}
+
+.performance_tab{
+	display:block !important;
+}
+
+.performance_tab:before{
+	content:"Monthly";
+	display:block;
+	margin-top:2em;
+	margin-bottom:1em;
+	font-weight:bold;
+	font-family:Helvetica, Arial, sans-serif;
+	border-bottom:1px solid;
+	font-size:1.2em
+}
+
+.performance_tab[data-tab="quarterly"]:before{
+	content: "Quarterly";
+}
+.performance_tab[data-tab="yearly"]:before{
+	content: "Yearly";
+}
+
+
+
+.titleTool{
+	padding-left: 0;
+	margin-top:1em;
+}
+
+.titleTool .mockDrop{
+	border:none;
+	font-size:inherit;
+	padding:0;
+	margin:0;
+	font-weight:bold;
+	box-shadow: none;
+	-mox-box-shadow: none;
+	-webkit-box-shadow: none;
+	color:inherit;
+}
+
+
+
+/* IA tool */
+
+#tool_portfolios{
+	padding: 0 !important;
+	overflow:hidden;
+	margin-bottom: 30px !important;
+
+}
+
+.tool_portfolio{
+	width: 50% !important;
+	margin-right: 2% !important;
+	padding: 1em 0 !important;
+	border-right: 1px dotted #ccc;
+}
+
+#model_portfolio{
+	margin-right: 0 !important;
+	width: 47% !important;
+	overflow:hidden;
+	border-right: none;
+
+}
+
+.pie{
+	margin-top:25pt !important;
+
+}
+
+.bracket{
+	border: none !important;
+	color:#000;
+}
+
+.ia_bar .color img,
+.ia_key img
+{
+	display:block !important;
+}
+
+#tool_portfolios .instructions, 
+#tool_portfolios .compare{
+	display:none;
+}
+
+#tool_results_key{
+	padding: 0 !important;
+
+
+	clear:both;
+}
+
+#tool_results_wrapper{
+	margin-top:3em;
+	padding: 2em 2em 1em !important;
+	border:1px dotted #888;
+	clear:both;
+	
+}
+
+#tool_results{
+	padding: 0 !important;
+}
+
+#tool_results .label{
+	background-image:none;
+	background-color:transparent;
+}
+
+#tool_results h2{
+	border-bottom: 1px solid #000 !important;
+}
+
+#tool_results .tool_results_left{
+	width: 47% !important;
+	margin-right:6% !important;
+}
+#tool_results .tool_results_right{
+	width: 47% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+#implementing_alts_g10k{
+	margin: 0 auto;
+}
+
+.ia_g10k_header{
+	width: 655px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px !important;
+	clear:both;
+}
+
+.fundBio{
+	width: 30%;
+	margin: 0 3% 15px 0;
+	padding:5px 0;
+}
+
+.fundBio img{
+	border-right-color:#fff;
+}
+
+.teamWrap{
+	width:auto !important;
+}
